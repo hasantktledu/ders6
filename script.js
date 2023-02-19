@@ -5,11 +5,11 @@ let prObje = new Promise(
             console.log(i)
         }
 
-        a("OK")
+        a({ gidenSMS: 12, gitmeyenSMS:1 })
     }  
 )
 
-prObje.then( (deger)=>{ console.log("SMS gönderimi tamamlandı" + deger) } )
+prObje.then( (deger)=>{ console.log("SMS gönderimi tamamlandı" + deger.gidenSMS) } )
 
 prObje.catch( (hata) => { console.log(hata)  } )
 //prObje.then( (deger)=>{ console.log("Mesaj 2" + deger) } )
